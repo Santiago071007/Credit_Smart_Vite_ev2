@@ -1,4 +1,4 @@
-// Validaciones: email, cédula y monto mínimo implementadas
+// Función calcularCuota probada y funcionando
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Pedir.css";
