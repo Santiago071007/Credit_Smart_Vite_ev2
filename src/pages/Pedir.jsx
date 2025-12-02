@@ -1,3 +1,4 @@
+// Validaciones: email, cédula y monto mínimo implementadas
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Pedir.css";
