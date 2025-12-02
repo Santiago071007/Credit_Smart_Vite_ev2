@@ -1,4 +1,4 @@
-// Función calcularCuota probada y funcionando
+// Botón reset: limpia todos los campos del formulario
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Pedir.css";
