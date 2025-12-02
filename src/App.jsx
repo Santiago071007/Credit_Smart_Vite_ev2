@@ -1,4 +1,4 @@
-// Filtrado en tiempo real según búsqueda implementado
+// Rutas principales Home, Simulador y Solicitar configuradas
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Simulador from "./pages/Simulador";
