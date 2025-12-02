@@ -1,3 +1,4 @@
+// Commit temporal 1
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Simulador from "./pages/Simulador";
