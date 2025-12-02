@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: #1e3a8a;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+header nav a:hover,
+header nav a.active {
+  color: #facc15;
+}
+
+/* MAIN */
+main {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+h1,
+h2 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+/* FORM */
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #1e3a8a;
+  outline: none;
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* BOTONES */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.buttons button {
+  flex: 1;
+  padding: 0.9rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  font-size: 1rem;
+}
+.buttons .submit-btn {
+  background: #1e3a8a;
+  color: #fff;
+}
+.buttons .submit-btn:hover {
+  background: #15306d;
+  transform: translateY(-2px);
+}
+.buttons .reset-btn {
+  background: #facc15;
+  color: #1e3a8a;
+}
+.buttons .reset-btn:hover {
+  background: #e5b60f;
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+  background: #1e3a8a;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Tarjetas individuales */
+.card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen de la tarjeta */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.card-body h3 {
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+.card-body p {
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Botón dentro de la tarjeta */
+.card-body button {
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.card-body button:hover {
+  background: #15306d;
+  transform: translateY(-2px);
+}
+
+/* Filtros */
+.filtros {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.filtros input,
+.filtros select {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.filtros input:focus,
+.filtros select:focus {
+  border-color: #1e3a8a;
+  outline: none;
+}
+
+/* Mensaje cuando no hay resultados segun lo diligenciado */
+.cards p {
+  text-align: center;
+  font-weight: 600;
+  color: #facc15;
+  font-size: 1.1rem;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* resumen del formulario de credito*/
+.resumen {
+  margin-top: 2rem;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.4s ease-in-out;
+  border-left: 8px solid #1e3a8a; 
+}
+
+.resumen h2 {
+  color: #1e3a8a;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.resumen p {
+  font-size: 1rem;
+  margin: 0.6rem 0;
+  color: #333;
+}
+
+.resumen p strong {
+  color: #1e3a8a;
+}
+
+.resumen button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.resumen button:hover {
+  background: #15306d;
+  transform: translateY(-3px);
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

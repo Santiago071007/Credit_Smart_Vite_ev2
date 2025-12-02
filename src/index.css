@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo blanco global */
+body {
+  background: #f4f6f8;
+  font-family: "Poppins", sans-serif;
+}
